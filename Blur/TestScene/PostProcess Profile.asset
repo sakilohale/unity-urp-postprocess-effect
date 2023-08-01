@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5398818012204989968
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38da69acabc82f4a9f6b2b0ec0c778f, type: 3}
+  m_Name: RBVO
+  m_EditorClassIdentifier: 
+  active: 1
+  initiate:
+    m_OverrideState: 1
+    m_Value: 0
+  iterations:
+    m_OverrideState: 1
+    m_Value: 4
+  blurSpread:
+    m_OverrideState: 1
+    m_Value: 0.09
+  Centerx:
+    m_OverrideState: 1
+    m_Value: 0.54
+  Centery:
+    m_OverrideState: 1
+    m_Value: 0.5
+  Intensity:
+    m_OverrideState: 1
+    m_Value: 1.16
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: PostProcess Profile
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 7393838192252683071}
+  - {fileID: 1179593625939346026}
+  - {fileID: -5398818012204989968}
+  - {fileID: 7651740709202131490}
+--- !u!114 &1179593625939346026
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e0ab3a7ffc05741b345212d3abe482, type: 3}
+  m_Name: GBVO
+  m_EditorClassIdentifier: 
+  active: 1
+  initiate:
+    m_OverrideState: 1
+    m_Value: 0
+  iterations:
+    m_OverrideState: 1
+    m_Value: 2
+  blurSpread:
+    m_OverrideState: 1
+    m_Value: 0.6
+  downSample:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &7393838192252683071
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658aaf40768890848a1980ab58253af0, type: 3}
+  m_Name: DBVO
+  m_EditorClassIdentifier: 
+  active: 1
+  initiate:
+    m_OverrideState: 1
+    m_Value: 0
+  iterations:
+    m_OverrideState: 1
+    m_Value: 4
+  blurSpread:
+    m_OverrideState: 1
+    m_Value: 0.6
+--- !u!114 &7651740709202131490
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bb4bc950dec48418a424ab8547d5e4, type: 3}
+  m_Name: KBVO
+  m_EditorClassIdentifier: 
+  active: 1
+  initiate:
+    m_OverrideState: 1
+    m_Value: 0
+  iterations:
+    m_OverrideState: 1
+    m_Value: 3
+  blurSpread:
+    m_OverrideState: 1
+    m_Value: -1.73
+  downSample:
+    m_OverrideState: 1
+    m_Value: 1

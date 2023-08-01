@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8556355117696420263
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383b0558e0fc99844adc12043af568d6, type: 3}
+  m_Name: GSVO
+  m_EditorClassIdentifier: 
+  active: 1
+  initiate:
+    m_OverrideState: 0
+    m_Value: 0
+  ScanRange:
+    m_OverrideState: 0
+    m_Value: 0
+  ScanSpeed:
+    m_OverrideState: 0
+    m_Value: 1
+  ScanColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  EdgeDetection:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: PostProcess Profile 1
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 4719977617122471572}
+  - {fileID: -8556355117696420263}
+--- !u!114 &4719977617122471572
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9be475b713b0874c847c0af610e9c63, type: 3}
+  m_Name: CSVO
+  m_EditorClassIdentifier: 
+  active: 1
+  initiate:
+    m_OverrideState: 1
+    m_Value: 1
+  ScanRange:
+    m_OverrideState: 1
+    m_Value: 1.54
+  MaxScanDistance:
+    m_OverrideState: 1
+    m_Value: 7.16
+  ScanSpeed:
+    m_OverrideState: 1
+    m_Value: 1
+  ScanColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  ScanCenter:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  CircleEdgeInitiate:
+    m_OverrideState: 1
+    m_Value: 0
+  CircleEdgeFrequency:
+    m_OverrideState: 1
+    m_Value: 0
+  CircleEdgeWidth:
+    m_OverrideState: 1
+    m_Value: 0
+  EdgeDetection:
+    m_OverrideState: 1
+    m_Value: 0

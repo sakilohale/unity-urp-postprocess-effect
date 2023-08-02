@@ -163,6 +163,11 @@ Shader "scan/CircleScan"
 
                 // 深度图逆推导重建世界坐标
                 float depth = tex2D(_CameraDepthTexture, i.texcoord).r;
+
+                #if defined(UNITY_REVERSED_Z)
+                depth = 1 - depth;
+                #endif
+
                 // float3 worldPos = ComputeWorldSpacePosition(i.uv, depth*2-1, UNITY_MATRIX_I_VP);
                 float4 NDCPos = float4(i.texcoord * 2 - 1,depth * 2 - 1,1);
                 float4 WorldPos = mul(_InverseVPMatrix,NDCPos);
